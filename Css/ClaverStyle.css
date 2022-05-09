@@ -1,0 +1,601 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapping {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+/* Css Navigation Start */
+.navigation_clickable {
+    display: none;
+}
+
+.nav {
+    width: 20vw;
+    height: 100vh;
+    background-color: white;
+    border-right: 1px solid rgb(223, 219, 219);
+    position: sticky;
+    left: 0;
+    top: 0;
+}
+.logo {
+    width: 8em;
+    margin: 1.2em 1.2em;
+}
+.cleverMenu {
+    list-style: none;
+}
+.cleverMenu .Menu_List {
+    display: block;
+}
+.cleverMenu .Menu_Item {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    font-size: .875rem;
+    font-weight: 500;
+    padding: 0.75rem 1.5rem;
+}
+.fa-angle-right {
+    margin-left: auto;
+}
+.horizontalBar {
+    width: 100%;
+    height: 4rem;
+    background-color: white;
+    position: sticky;
+    top: 0;
+}
+.profile {
+    display: inline;
+    float: right;
+    width: 40px;
+    height: 40px;
+    background-color: antiquewhite;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    margin-top: 0.6em;
+}
+.profile > img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.name {
+    display: inline;
+    float: right;
+    line-height: 4em;
+    margin-right: 4rem;
+    margin-left: 0.6rem;
+    font-weight: 600;
+}
+.small_screen_searchBox { display: none;}
+.searchBox {
+    display: inline;
+    float: right;
+    width: 230px;
+    height: 30px;
+    margin-right: 60px;
+    margin-top: 0.9rem;
+}
+.searchBox::after {
+    display: block;
+    content: '';
+    width: 200px;
+    height: 1px;
+    background-color: #ccc;
+    position: absolute;
+}
+.searchBar {
+    border: 0;
+    width: 200px;
+    padding: 8px 0;
+}
+.searchBar:focus {
+    outline: 0;
+    border: 0%;
+}
+i.fa-search {
+    display: inline-block;
+    padding: 0 5px;
+    color: #b1afaf;
+    font-size: 14px;
+    cursor: pointer;
+}
+input::-webkit-input-placeholder {
+    color: #b1afaf;
+    /* color: #4e4b4b; */
+    font-size: 14px;
+}
+i.fa-bell { float: right; color: #ccc; display: inline;
+    line-height: 3.8rem;
+    margin-right: 20px;
+}
+.Badge_A, .Badge_B, .Badge_C {
+    display: inline;
+    float: left;
+    width: 30px;
+    height: 30px;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+    margin-top: 14px;
+}
+.Badge_A { background-color: #f07a7a; margin-left: 4rem;}
+.Badge_B { background-color: #ddacf0; margin-left: 5px;}
+.Badge_C { background-color: #b6a7f0; margin-left: 5px;}
+.createNew {
+    display: inline;
+    float: left;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px dashed #ccc;
+    margin-top: 14px;
+    margin-left: 6px;
+}
+i.fa-plus {
+    display: table;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 2.5;
+    font-size: 13px;
+    cursor: pointer;
+}
+.underLine {
+    width: 100%;
+    height: 1px;
+    background-color: #b1afaf;
+    margin: 14px 0;
+}
+.resouces {
+    font-size: 12px;
+    color: #ccc;
+    display: block;
+    margin-left: 23px;
+    margin-top: 15px;
+}
+/* Css Navigation End */
+
+.flex_prefix {
+    display: flex;
+    justify-content: space-between;
+}
+.intro {
+    max-width: 1020px;
+    margin: auto;
+}
+.greeting {
+    margin: 15px 5px;
+    display: inline-block;
+}
+.share, .create {
+    display: inline;
+    float: right;
+    width: 123px;
+    border-radius: 12px;
+    padding: 8px 6px;
+    margin: 12px;
+}
+.share { background-color: white; text-align: center;}
+.create {
+    background-color: rgb(85, 99, 224);
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+.content_img {
+    width: 60%;
+    height: auto;
+    box-shadow: 0 3px 3px -1px rgb(10 22 70 / 10%), 0 0 1px 0 rgb(10 22 70 / 6%);
+}
+.clientService {
+    width: 100%;
+    height: auto;
+}
+.sliding_tabs {
+    height: auto;
+    background-color: white;
+    box-shadow: 0 3px 3px -1px rgb(10 22 70 / 10%), 0 0 1px 0 rgb(10 22 70 / 6%);
+}
+.tabs {
+    padding: 12px;
+}
+.tabs .tab_one {
+    width: 100%;
+    height: 50px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    padding: 6px 0;
+}
+.tabs .tab_one h3, p {
+    text-align: left;
+    padding: 0 30px;
+    line-height: 1.0;
+}
+.tabs .tab_one  p { font-size: 14px;}
+.tabs .topReference {
+    display: inline-block;
+    font-size: 1.2em;
+    font-weight: 500;
+    text-align: left;
+    margin-left: 35px;
+    padding-top: 11px;
+}
+.tabs .seeAll {
+    display: inline;
+    float: right;
+    margin-right: 13px;
+    padding-top: 11px;
+    color: #5c60f5;
+}
+
+/* Css Section Start */
+.container-fluid {
+    width: 100%;
+    /* background-color: #f5f9fc; */
+    background-color: #eff3f7;
+    /* background-color: aquamarine; */
+}
+
+/* Navigation Bar Icon css start */
+.Hamburger_Menu {
+    display: inline;
+    float: left;
+    width: 22px;
+    cursor: pointer;
+    margin-top: 14px;
+}
+.Hamburger_Menu > .icon_bar {
+    display: block;
+    width: 100%;
+    height: 3px;
+    margin: 2px 0;
+    background-color: black;
+}
+/* Navigation Bar Icon css end */
+
+.AboutUS {
+    background-color: white;
+    margin-top: 30px;
+    padding: 15px 0;
+    border-radius: 12px;
+    box-shadow: 0 3px 3px -1px rgb(10 22 70 / 10%), 0 0 1px 0 rgb(10 22 70 / 6%);
+}
+.about_heading {
+    padding: 6px 12px;
+}
+.about_txt {
+    font-size: 17px;
+    line-height: 1.4;
+    text-align: justify;
+}
+/* Css Section End */
+
+
+/******* Media Queries *******/
+
+.container {
+    width: 100%;
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        width: 334.98px;
+        margin: auto;
+    }
+    .Badge_A {
+        margin-left: 1em;
+    }
+    .Badge_A, .Badge_B, .Badge_C, .createNew {
+        width: 23px;
+        height: 22px;
+        line-height: 23px;
+        font-size: 13px;
+    }
+    i.fa-plus {
+        line-height: 1.9;
+        font-size: 12px;
+    }
+    .searchBox {
+        display: none;
+    }
+    .name {
+        font-size: 12px;
+        margin-right: 0;
+    }
+    i.fa-bell {line-height: 3.0; margin-right: 12px;} 
+    .profile {
+        width: 32px;
+        height: 32px;
+    }
+    .profile > img {
+        width: 30px;
+        height: 30px;
+    }
+    .small_screen_searchBox {
+        display: block;
+    }
+    .searchBox_1 {
+        display: inline;
+        float: right;
+        width: 230px;
+        height: 30px;
+        margin-right: 60px;
+        margin-top: 0.9rem;
+    }
+    .searchBox_1::after {
+        display: block;
+        content: '';
+        width: 200px;
+        height: 1px;
+        background-color: #ccc;
+        position: absolute;
+    }
+    .horizontalBar {height: 7rem;}
+    .greeting {font-size: 16px;}
+    .share, .create {
+        width: 70px;
+        font-size: 12px;
+        margin: 15px 4px;
+        padding: 5px 0;
+    }
+    .flex_prefix {
+        width: 100%;
+        flex-flow: column;
+    }
+    .sliding_tabs {
+        width: 100%;
+        border-radius: 0;
+        margin-top: 8px;
+        overflow-x: scroll;
+    }
+    .content_img {
+        min-width: 100%;
+    }
+    .tabs {
+        width: 610px;
+        margin-top: 8px;
+        padding: 0;
+    }
+    .tabs .topReference {display: none;}
+    .tabs .seeAll {display: none;}
+    .tabs .tab_one_modify {
+        display: inline-block;
+        width: 200px;
+        font-size: 12px;
+        border: 0;
+        padding: 0;
+        margin: 0;
+        position: relative;
+    }
+    .tabs .tab_one_modify:nth-of-type(1)::before {background-color: #f07a7a;}
+    .tabs .tab_one_modify:nth-of-type(2)::before {background-color: #86f3db;}
+    .tabs .tab_one_modify:nth-of-type(3)::before {background-color: #6ec5e7;}
+    .tabs .tab_one_modify::before {
+        content: "";
+        display: block;
+        width: 2px;
+        height: 50px;      
+        position: absolute;
+        top: -3px;
+    }
+    .tabs .tab_one_modify h3, p {padding: 2px 12px;}
+    .AboutUS {
+        margin: 8px 0;
+    }
+    .nav {
+        display: none;
+    }
+    .navigation_clickable {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        z-index: 10000;
+        top: 0;
+        background-color: #dce6ed;
+    }
+    .close {
+        display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    font-size: 38px;
+    font-weight: 600;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    text-align: center;
+    line-height: 1.1;
+    cursor: pointer;
+    }
+}
+@media screen and (min-width: 576px){
+    .container {
+        width: 499.98px;
+        margin: auto;
+    }
+    .nav {
+        display: none;
+    }
+}
+@media screen and (min-width: 768px){
+    .container {
+        width: 667.98px;
+        margin: auto;
+    }
+    .Badge_A {
+        margin-left: 1rem;
+    }
+    .Badge_A, .Badge_B, .Badge_C {
+        width: 25px;
+        height: 25px;
+        line-height: 27px;
+    }
+    .createNew {
+        width: 25px;
+        height: 25px;
+    }
+    i.fa-plus { line-height:  2.0;}
+    .name {
+        margin-right: 0;
+    }
+    .tabs .topReference {
+        margin-left: 0;
+        font-size: 16px;
+    }
+    .tabs .seeAll {
+        margin-right: 0;
+    }
+    .searchBox {
+        display: block;
+    }
+    .searchBox {
+        margin-right: 17px;
+    }
+    /* zfjslkdfjsl */
+
+    .flex_prefix {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .intro {
+        max-width: 1020px;
+        margin: auto;
+    }
+    .greeting {
+        margin: 15px 5px;
+        display: inline-block;
+    }
+    .share, .create {
+        display: inline;
+        float: right;
+        width: 123px;
+        border-radius: 12px;
+        padding: 8px 6px;
+        margin: 12px;
+    }
+    .share { background-color: white; text-align: center;}
+    .create {
+        background-color: rgb(85, 99, 224);
+        color: white;
+        text-align: center;
+        cursor: pointer;
+    }
+    .content_img {
+        width: 60%;
+        height: auto;
+        box-shadow: 0 3px 3px -1px rgb(10 22 70 / 10%), 0 0 1px 0 rgb(10 22 70 / 6%);
+    }
+    .clientService {
+        width: 100%;
+        height: auto;
+    }
+    .sliding_tabs {
+        width: 37%;
+        height: auto;
+        background-color: white;
+        border-radius: 12px;
+        box-shadow: 0 3px 3px -1px rgb(10 22 70 / 10%), 0 0 1px 0 rgb(10 22 70 / 6%);
+    }
+    .tabs {
+        padding: 12px;
+    }
+    .tabs .tab_one {
+        width: 100%;
+        height: 50px;
+        margin: 20px auto;
+        border: 1px solid #ccc;
+        cursor: pointer;
+        padding: 6px 0;
+    }
+    .tabs .tab_one h3, p {
+        text-align: left;
+        padding: 0 30px;
+        line-height: 1.0;
+    }
+    .tabs .tab_one  p { font-size: 14px;}
+    .tabs .topReference {
+        font-size: 1rem;
+        margin-left: 0;
+    }
+    .tabs .seeAll {
+        margin-right: 0;
+    }
+    .navigation_clickable {
+        width: 30%;
+        height: 100%;
+        position: fixed;
+        z-index: 10000;
+        top: 0;
+        background-color: #dce6ed;
+    }
+    .close {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    font-size: 38px;
+    font-weight: 600;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    text-align: center;
+    line-height: 1.1;
+    cursor: pointer;
+    }
+}
+@media screen and (min-width: 992px){
+    .container {
+        width: 774.98px;
+        margin: auto;
+    }
+    .nav {
+        display: block;
+    }
+}
+@media screen and (min-width: 1200px){
+    .container {
+        width: 1022.98px;
+        margin: auto;
+    }
+}
+@media screen and (min-width: 1400px){
+    .container {
+        width: 1140px;
+        margin: auto;
+    }
+}
+
+
+
+/* @media screen and (max-width: 990px) {
+    .intro {
+        max-width: 749px;
+    }
+    .container-content {
+        max-width: 749px;
+    }
+    .tabs .tab_one {
+        width: 15.4rem;
+        font-size: 1rem;
+        margin-left: 1rem;
+    }
+    .tabs .seeAll {
+        margin-right: 0rem;
+    }
+} */
